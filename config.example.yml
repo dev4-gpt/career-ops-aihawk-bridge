@@ -1,0 +1,30 @@
+# career-ops-aihawk-bridge configuration
+# Copy this to config.yml and fill in your paths.
+# All values can also be overridden via environment variables.
+
+# ── Paths ─────────────────────────────────────────────────────────────────────
+# Absolute or relative paths to the two repos side by side.
+career_ops_dir: ../career-ops                        # env: CAREER_OPS_DIR
+aihawk_dir:     ../Jobs_Applier_AI_Agent_AIHawk      # env: AIHAWK_DIR
+
+# ── Export settings (export-aihawk.mjs) ──────────────────────────────────────
+score_threshold: 4.0                                 # env: SCORE_THRESHOLD
+                                                     # Minimum score to include in queue (0.0–5.0)
+
+status_filter:                                       # env: STATUS_FILTER (comma-separated)
+  - Evaluated                                        # Only export jobs in these statuses
+
+output_file: aihawk-queue.json                       # env: OUTPUT_FILE
+
+# ── Bridge settings (bridge.py) ───────────────────────────────────────────────
+# Whether to automatically sync Applied status back to career-ops after AIHawk runs.
+sync_back: false           # Use --sync-back flag on bridge.py to override
+
+# Status to write back when sync_back is true.
+sync_status: Applied       # One of: Evaluated, Applied, Responded, Interview,
+                           #         Offer, Rejected, Discarded, SKIP
+
+# ── Notes ─────────────────────────────────────────────────────────────────────
+# The bridge does NOT read this file at runtime yet — it uses env vars and CLI flags.
+# This file serves as documentation for your setup.
+# A future version will add: python bridge.py --config config.yml

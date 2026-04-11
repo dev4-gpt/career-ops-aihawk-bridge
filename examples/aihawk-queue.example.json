@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0",
+  "exported_at": "2026-04-10T09:00:00.000Z",
+  "score_threshold": 4.0,
+  "status_filter": ["Evaluated"],
+  "career_ops_dir": "/Users/you/repos/career-ops",
+  "jobs": [
+    {
+      "id": "042",
+      "date": "2026-04-08",
+      "company": "Acme Corp",
+      "role": "Senior AI Engineer",
+      "score": 4.4,
+      "status": "Evaluated",
+      "hasPdf": true,
+      "pdfPath": "/Users/you/repos/career-ops/output/042-acme-corp.pdf",
+      "reportPath": "/Users/you/repos/career-ops/reports/042-acme-corp-2026-04-08.md",
+      "jobUrl": "https://jobs.acme.com/posting/ai-engineer-senior",
+      "notes": "Strong match on LLM infra; remote-first; comp within range"
+    },
+    {
+      "id": "047",
+      "date": "2026-04-09",
+      "company": "FinTech Startup",
+      "role": "ML Platform Lead",
+      "score": 4.1,
+      "status": "Evaluated",
+      "hasPdf": true,
+      "pdfPath": "/Users/you/repos/career-ops/output/047-fintech-startup.pdf",
+      "reportPath": "/Users/you/repos/career-ops/reports/047-fintech-startup-2026-04-09.md",
+      "jobUrl": "https://www.linkedin.com/jobs/view/3987654321",
+      "notes": "LinkedIn Easy Apply; series B; competitive equity"
+    },
+    {
+      "id": "051",
+      "date": "2026-04-10",
+      "company": "EnterpriseAI",
+      "role": "Applied AI Director",
+      "score": 4.7,
+      "status": "Evaluated",
+      "hasPdf": false,
+      "pdfPath": null,
+      "reportPath": "/Users/you/repos/career-ops/reports/051-enterpriseai-2026-04-10.md",
+      "jobUrl": null,
+      "notes": "PDF not yet generated; URL missing from report — check manually"
+    }
+  ]
+}
